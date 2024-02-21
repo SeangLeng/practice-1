@@ -21,15 +21,15 @@
 
         @keyframes loopLeft-right {
             0% {
-                margin-left: 0%;
+                margin-left: 10%;
             }
 
             50% {
-                margin-left: 50%;
+                margin-left: 40%;
             }
 
             100% {
-                margin-left: 0%;
+                margin-left: 10%;
             }
         }
 
@@ -50,21 +50,28 @@
         .description {
             margin: 1rem;
         }
+
         @media screen and (max-width: 668px) {
+
             /* For screens larger than 768px width */
             .section-main img {
-                float: left; /* Float image to the left */
-                width: 70%; /* Half width */
-                margin-right: 1rem; /* Space between image and text */
+                float: left;
+                /* Float image to the left */
+                width: 70%;
+                /* Half width */
+                margin-right: 1rem;
+                /* Space between image and text */
             }
+
             .images-section>img {
                 width: 20%;
             }
+
             .description {
-                margin: 0; /* Reset margin for larger screens */
+                margin: 0;
+                /* Reset margin for larger screens */
             }
         }
-
     </style>
 </head>
 
@@ -73,61 +80,85 @@
     <h1 style="color: rgb(116, 224, 224); text-align: center;">Practice-1: 19-02-24</h1>
     <hr color="green">
     <div class="images-section">
-        <img src="./images/angkor-809753_960_720.webp" />
-        <img src="./images/angkor-thom-wat-Kambodscha.jpg" />
-        <img src="./images/attr_koh_ker_2.jpg" />
+        <img src="./images/angkor-809753_960_720.webp" usemap="#planetmap" />
+        <map name="planetmap">
+            <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section-1">
+        </map>
+        <img src="./images/angkor-thom-wat-Kambodscha.jpg" usemap="#planetmap-1" />
+        <map name="planetmap-1">
+            <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section-2">
+        </map>
+        <img src="./images/attr_koh_ker_2.jpg" usemap="#planetmap-2" />
+        <map name="planetmap-2">
+            <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section-3">
+        </map>
     </div>
     <hr color="green">
 
-    <section id="section-1" class="section-1">
-        <a href="/welcome.html">Home</a> |
-        <a href="/welcome.html">Contact us</a> |
-        <a href="/welcome.html">About us</a>
+    <section id="section-main" class="section-1">
+        <a href="/welcome.html" target="_blank">Home</a> |
+        <a href="/welcome.html" target="_blank">Contact us</a> |
+        <a href="/welcome.html" target="_blank">About us</a>
     </section>
 
     <section id="section-1" class="section-main">
         <h1>Paragraph 1:</h1>
         <div>
             <img src="./images/angkor-809753_960_720.webp" alt="angkor-809753_960_720" />
-            In the vast expanse of the cosmos, galaxies swirl in silent dances, stars alight with the fervor of
-            creation, and planets spin in delicate orbits, each a testament to the beauty and complexity of the
-            universe. From the smallest particles to the grandest celestial bodies, every corner of existence whispers
-            secrets of the infinite.
 
-            On a small blue planet nestled in the arms of a spiral galaxy, life thrives in myriad forms. From the lush
-            rainforests teeming with biodiversity to the barren deserts where life persists against all odds, Earth is a
-            tapestry woven with the threads of evolution and adaptation.
+            <p class="description">In the vast expanse of the cosmos, galaxies swirl in silent dances, stars alight with
+                the fervor of
+                creation, and planets spin in delicate orbits, each a testament to the beauty and complexity of the
+                universe. From the smallest particles to the grandest celestial bodies, every corner of existence
+                whispers
+                secrets of the infinite.
 
-            In the depths of the oceans, mysterious creatures glide through dark waters, their bioluminescent glow
-            illuminating the abyss. Coral reefs, vibrant and diverse, are home to a multitude of species, their delicate
-            ecosystems fragile yet resilient in the face of environmental challenges.
+                On a small blue planet nestled in the arms of a spiral galaxy, life thrives in myriad forms. From the
+                lush
+                rainforests teeming with biodiversity to the barren deserts where life persists against all odds, Earth
+                is a
+                tapestry woven with the threads of evolution and adaptation.
 
-            Above ground, forests stand tall, their canopies sheltering countless species of plants and animals. From
-            the majestic redwoods of California to the dense jungles of the Amazon, these green giants are the lungs of
-            the planet, purifying the air and providing habitat for countless creatures.
+                In the depths of the oceans, mysterious creatures glide through dark waters, their bioluminescent glow
+                illuminating the abyss. Coral reefs, vibrant and diverse, are home to a multitude of species, their
+                delicate
+                ecosystems fragile yet resilient in the face of environmental challenges.
 
-            But amidst the beauty of nature lies a world of human endeavor, where cities rise like monuments to progress
-            and technology. Skyscrapers pierce the sky, their steel and glass facades reflecting the hustle and bustle
-            of urban life below. Streets buzz with activity as people go about their daily routines, each one a
-            protagonist in the story of civilization.
+                Above ground, forests stand tall, their canopies sheltering countless species of plants and animals.
+                From
+                the majestic redwoods of California to the dense jungles of the Amazon, these green giants are the lungs
+                of
+                the planet, purifying the air and providing habitat for countless creatures.
 
-            Yet, for all our achievements, humanity faces challenges on a global scale. Climate change threatens to
-            disrupt the delicate balance of the Earth's ecosystems, while pollution chokes rivers and oceans, leaving
-            devastation in its wake. Inequality and injustice plague societies around the world, tearing at the fabric
-            of human dignity and compassion.
+                But amidst the beauty of nature lies a world of human endeavor, where cities rise like monuments to
+                progress
+                and technology. Skyscrapers pierce the sky, their steel and glass facades reflecting the hustle and
+                bustle
+                of urban life below. Streets buzz with activity as people go about their daily routines, each one a
+                protagonist in the story of civilization.
 
-            But in the face of adversity, there is hope. Across the globe, individuals and communities are coming
-            together to tackle these pressing issues, to forge a path towards a more sustainable and equitable future.
-            From grassroots movements to international initiatives, the seeds of change are being sown, one act of
-            kindness, one innovative solution at a time.
+                Yet, for all our achievements, humanity faces challenges on a global scale. Climate change threatens to
+                disrupt the delicate balance of the Earth's ecosystems, while pollution chokes rivers and oceans,
+                leaving
+                devastation in its wake. Inequality and injustice plague societies around the world, tearing at the
+                fabric
+                of human dignity and compassion.
 
-            As the sun sets on another day, casting its golden hues across the horizon, we are reminded of the fragility
-            and beauty of life on Earth. In the grand tapestry of existence, each one of us is but a single thread,
-            weaving our own story into the fabric of time. Let us cherish this precious planet we call home, and strive
-            to leave a legacy of compassion, stewardship, and love for generations to come.</p>
+                But in the face of adversity, there is hope. Across the globe, individuals and communities are coming
+                together to tackle these pressing issues, to forge a path towards a more sustainable and equitable
+                future.
+                From grassroots movements to international initiatives, the seeds of change are being sown, one act of
+                kindness, one innovative solution at a time.
+
+                As the sun sets on another day, casting its golden hues across the horizon, we are reminded of the
+                fragility
+                and beauty of life on Earth. In the grand tapestry of existence, each one of us is but a single thread,
+                weaving our own story into the fabric of time. Let us cherish this precious planet we call home, and
+                strive
+                to leave a legacy of compassion, stewardship, and love for generations to come.</p>
         </div>
     </section>
-    <section class="section-main">
+    <section id="section-2" class="section-main">
         <h1>Paragraph 2:</h1>
         <div>
             <img src="./images/angkor-thom-wat-Kambodscha.jpg" alt="angkor-thom-wat-Kambodscha" />
@@ -170,7 +201,7 @@
             </p>
         </div>
     </section>
-    <section class="section-main">
+    <section id="section-3" class="section-main">
         <h1>Paragraph 3:</h1>
         <div>
             <img src="./images/attr_koh_ker_2.jpg" alt="attr_koh_ker_2" />
@@ -213,8 +244,8 @@
             </p>
         </div>
     </section>
-    <section>
-        <img src="images/large_area-map-of-cambodia_e5d4f82643.png" width="100%" style="margin: 2rem 0;" />
+    <section style="display: flex; justify-content: center; align-items: center;">
+        <img src="images/large_area-map-of-cambodia_e5d4f82643.png" style="margin: 2rem 0; width: 50%; border-radius: 20px;" usemap="#image-map" />
     </section>
 </body>
 
