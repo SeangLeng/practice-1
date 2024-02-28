@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice-1: 19-02-24</title>
     <style>
+        body {
+            padding: 3rem;
+        }
         .images-section>img {
             width: 300px;
             height: 300px;
             object-fit: cover;
             border: 3px solid green;
+        }
+
+        p {
+            text-align: justify;
         }
 
         .images-section {
@@ -79,7 +86,7 @@
 
     <h1 style="color: rgb(5, 160, 160); text-align: center;">Practice-1: 19-02-24</h1>
     <hr color="green">
-    <div class="images-section">
+    <div id="section" class="images-section">
         <img src="./images/angkor-809753_960_720.webp" usemap="#planetmap" />
         <map name="planetmap">
             <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section-1">
@@ -104,7 +111,10 @@
     <section id="section-1" class="section-main">
         <h1>Paragraph 1:</h1>
         <div>
-            <img src="./images/angkor-809753_960_720.webp" alt="angkor-809753_960_720" />
+            <img src="./images/angkor-809753_960_720.webp" alt="angkor-809753_960_720" usemap="#planetmap-top" />
+            <map name="planetmap-top">
+                <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section">
+            </map>
 
             <p class="description">In the vast expanse of the cosmos, galaxies swirl in silent dances, stars alight with
                 the fervor of
@@ -161,7 +171,11 @@
     <section id="section-2" class="section-main">
         <h1>Paragraph 2:</h1>
         <div>
-            <img src="./images/angkor-thom-wat-Kambodscha.jpg" alt="angkor-thom-wat-Kambodscha" />
+            <img src="./images/angkor-thom-wat-Kambodscha.jpg" alt="angkor-thom-wat-Kambodscha"
+                usemap="#planetmap-top" />
+            <map name="planetmap-top">
+                <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section">
+            </map>
             <p class="description">In the vast expanse of the cosmos, galaxies swirl in silent dances, stars alight with
                 the fervor of creation, and planets spin in delicate orbits, each a testament to the beauty and
                 complexity of the universe. From the smallest particles to the grandest celestial bodies, every corner
@@ -204,7 +218,10 @@
     <section id="section-3" class="section-main">
         <h1>Paragraph 3:</h1>
         <div>
-            <img src="./images/attr_koh_ker_2.jpg" alt="attr_koh_ker_2" />
+            <img src="./images/attr_koh_ker_2.jpg" alt="attr_koh_ker_2" usemap="#planetmap-top" />
+            <map name="planetmap-top">
+                <area shape="rect" coords="0,0,1002,1026" alt="Sun" href="#section">
+            </map>
             <p class="description">In the vast expanse of the cosmos, galaxies swirl in silent dances, stars alight with
                 the fervor of creation, and planets spin in delicate orbits, each a testament to the beauty and
                 complexity of the universe. From the smallest particles to the grandest celestial bodies, every corner
@@ -245,7 +262,8 @@
         </div>
     </section>
     <section style="display: flex; justify-content: center; align-items: center;">
-        <img src="images/large_area-map-of-cambodia_e5d4f82643.png" style="margin: 2rem 0; width: 50%; border-radius: 20px;" usemap="#image-map" />
+        <img src="images/large_area-map-of-cambodia_e5d4f82643.png"
+            style="margin: 2rem 0; width: 50%; border-radius: 20px;" usemap="#image-map" />
     </section>
 </body>
 
